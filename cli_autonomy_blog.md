@@ -10,7 +10,11 @@ Meanwhile, the terminal has been sitting there the whole time. Every tool alread
 
 NVIDIA just published a study proving that terminal capability in LLMs is trainable and scales predictably. Peter Steinberger, creator of OpenClaw and now at OpenAI, has been saying the same thing from a practitioner's perspective: "mcp were a mistake. bash is better."
 
-Anthropic acquired Vercept, a computer-use startup, folding desktop and terminal operation directly into Claude. The industry is converging on one conclusion — the CLI is the bridge to autonomy.
+Anthropic acquired Vercept, a computer-use startup, folding desktop and terminal operation directly into Claude.
+
+Elon Musk put it simply in his recent interview with Dwarkesh Patel — the approach is "driving a computer screen" rather than a car. A self-driving computer. The first step to autonomy is AI operating a computer as well as a human does.
+
+The industry is converging on one conclusion — the CLI is the bridge to autonomy.
 
 ## The NVIDIA Study
 
@@ -49,6 +53,16 @@ Anthropic acquired Vercept on February 25, 2026. Vercept built Vy — a computer
 The founders joined Anthropic. The product is being shut down. The technology is being folded into Claude.
 
 This isn't a coincidence. Anthropic already has Claude Code — a terminal agent. Now they're adding desktop-level computer operation. The strategy is clear: make Claude operate computers the way humans do.
+
+## Musk: A Self-Driving Computer
+
+In his recent interview with Dwarkesh Patel, Elon Musk described the approach as essentially applying Tesla's self-driving methodology — but instead of driving a car, you're driving a computer screen. A self-driving computer.
+
+The analogy is precise. Tesla's autonomy stack perceives the road, reasons about obstacles, and acts through steering and acceleration. A terminal agent perceives the screen, reasons about the task, and acts through commands and keystrokes.
+
+Same architecture. Different vehicle.
+
+The first step to full autonomy isn't building new infrastructure. It's AI using computers as well as humans do. Click, type, navigate, execute. Once that works, everything else follows.
 
 ## The Autonomy Progression
 
@@ -100,6 +114,19 @@ The terminal gives you governance primitives for free. The sandbox is the guardr
 The industry is converging. NVIDIA is training models specifically for terminal capability. Anthropic is acquiring computer-use companies. OpenAI hired the person who built the most popular terminal agent. Steinberger calls CLI the ultimate integration. The data backs him up.
 
 The path to AI autonomy doesn't run through new protocols. It runs through the terminal — the integration layer that's been there all along.
+
+---
+
+## References
+
+- [On Data Engineering for Scaling LLM Terminal Capabilities — NVIDIA (arXiv)](https://arxiv.org/abs/2602.21193)
+- [Just Talk To It — Peter Steinberger](https://steipete.me/posts/just-talk-to-it)
+- [Elon Musk — "In 36 months, the cheapest place to put AI will be space" — Dwarkesh Patel](https://www.dwarkesh.com/p/elon-musk)
+- [Anthropic acquires Vercept — TechCrunch](https://techcrunch.com/2026/02/25/anthropic-acquires-vercept-ai-startup-agents-computer-use-founders-investors/)
+- [Anthropic acquires Vercept — GeekWire](https://www.geekwire.com/2026/anthropic-acquires-vercept-in-early-exit-for-one-of-seattles-standout-ai-startups/)
+- [OpenAI grabs OpenClaw creator Peter Steinberger — TechEduByte](https://www.techedubyte.com/openai-peter-steinberger-openclaw-personal-agents/)
+- [Lex Fridman Podcast #491 — Peter Steinberger](https://lexfridman.com/peter-steinberger-transcript/)
+- [Why CLIs Beat MCP for AI Agents](https://medium.com/@rentierdigital/why-clis-beat-mcp-for-ai-agents-and-how-to-build-your-own-cli-army-6c27b0aec969)
 
 ---
 
