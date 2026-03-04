@@ -1,14 +1,20 @@
-# The CLI Is The Path To AI Autonomy
+# The CLI Is The Path To AI Autonomy, For Now
 
-The terminal isn't a developer convenience. It's the existing, universal, zero-overhead integration layer that makes AI autonomy practical today.
+The terminal is the existing, universal, zero-overhead integration layer that makes AI autonomy practical today.
+
+![Cover](images/cover.png)
 
 ## In Short
 
-Everyone is building new protocols, new APIs, new standards to give AI agents access to tools. MCP servers. Function calling schemas. Tool registries.
+I would love you to hear me out on this…
+
+There are a number of things happening. Firstly, the rise of the humble CLI. Before physical autonomy, we need to master digital autonomy.
+
+Everyone is building new protocols, new APIs, new standards to give AI Agents access to tools. MCP servers. Function calling schemas. Tool registries.
 
 Meanwhile, the terminal has been sitting there the whole time. Every tool already has a CLI. Git, Docker, curl, ffmpeg, npm — decades of tooling, already accessible through a shell command.
 
-NVIDIA just published a study proving that terminal capability in LLMs is trainable and scales predictably. Peter Steinberger, creator of OpenClaw and now at OpenAI, has been saying the same thing from a practitioner's perspective: "mcp were a mistake. bash is better."
+NVIDIA just published a study proving that terminal capability in LLMs is trainable and scales predictably. Peter Steinberger, creator of OpenClaw and now at OpenAI, has been saying the same thing from a practitioner's perspective — "mcp were a mistake. bash is better."
 
 Anthropic acquired Vercept, a computer-use startup, folding desktop and terminal operation directly into Claude.
 
@@ -16,9 +22,17 @@ Elon Musk put it simply in his recent interview with Dwarkesh Patel — the appr
 
 The industry is converging on one conclusion — the CLI is the bridge to autonomy.
 
+![CLI Tools](images/cli-tools.png)
+
+Multiple AI companies have launched CLIs — Claude CLI, Codex CLI, Gemini CLI. In a recent interview, OpenClaw creator Peter Steinberger questioned whether the best interface for AI Agents is not a new protocol at all but rather the command line — the same interface that has been powering software for over fifty years.
+
+Those unfamiliar with Unix-based systems (Linux, AIX) underestimate what the CLI is capable of. SaaS platforms will eventually collapse into the Agentic framework and models. The terminal becomes increasingly relevant as that shift plays out.
+
 ## The NVIDIA Study
 
 NVIDIA's paper "On Data Engineering for Scaling LLM Terminal Capabilities" addresses a gap nobody was talking about openly. Training data strategies for terminal agents have been largely undisclosed.
+
+![NVIDIA Paper](images/nvidia-paper.png)
 
 Their contributions:
 
@@ -26,9 +40,31 @@ Their contributions:
 - **Terminal-Corpus** — an open-source dataset for terminal agent training
 - **Nemotron-Terminal** — models trained on this data showing dramatic gains
 
-The results speak for themselves. Nemotron-Terminal-8B improves from 2.5% to 13.0% on Terminal-Bench 2.0. The 14B model jumps from 4.0% to 20.2%. The 32B model goes from 3.4% to 27.4%, matching significantly larger models.
+The results speak for themselves.
+
+![NVIDIA Results](images/nvidia-results.png)
+
+Nemotron-Terminal-8B improves from 2.5% to 13.0% on Terminal-Bench 2.0. The 14B model jumps from 4.0% to 20.2%. The 32B model goes from 3.4% to 27.4%, matching significantly larger models.
 
 The key insight isn't bigger models. It's data engineering — filtering, curriculum learning, long context training. Terminal capability is a trainable skill that scales predictably.
+
+## The Anthropic Bet
+
+Anthropic acquired Vercept on February 25, 2026. Vercept built Vy — a computer-use agent that could operate a remote MacBook in the cloud.
+
+The founders joined Anthropic. The product is being shut down. The technology is being folded into Claude.
+
+This isn't a coincidence. Anthropic already has Claude Code — a terminal agent. Now they're adding desktop-level computer operation. The strategy is clear — make Claude operate computers the way humans do.
+
+## Musk — A Self-Driving Computer
+
+In his recent interview with Dwarkesh Patel, Elon Musk described the approach as essentially applying Tesla's self-driving methodology — but instead of driving a car, you're driving a computer screen. A self-driving computer.
+
+The analogy is precise. Tesla's autonomy stack perceives the road, reasons about obstacles, and acts through steering and acceleration. A terminal agent perceives the screen, reasons about the task, and acts through commands and keystrokes.
+
+Same architecture. Different vehicle.
+
+The first step to full autonomy isn't building new infrastructure. It's AI using computers as well as humans do. Click, type, navigate, execute. Once that works, everything else follows.
 
 ## Peter Steinberger's Position
 
@@ -44,37 +80,21 @@ His argument against MCP:
 
 **Model familiarity.** AI systems already understand command-line tools. The model learns through trial and error on first use. No schema definitions needed.
 
-His workflow: 3-8 Codex CLI instances in parallel, running in a 3x3 terminal grid. Pure terminal. No abstractions.
-
-## The Anthropic Bet
-
-Anthropic acquired Vercept on February 25, 2026. Vercept built Vy — a computer-use agent that could operate a remote MacBook in the cloud.
-
-The founders joined Anthropic. The product is being shut down. The technology is being folded into Claude.
-
-This isn't a coincidence. Anthropic already has Claude Code — a terminal agent. Now they're adding desktop-level computer operation. The strategy is clear: make Claude operate computers the way humans do.
-
-## Musk: A Self-Driving Computer
-
-In his recent interview with Dwarkesh Patel, Elon Musk described the approach as essentially applying Tesla's self-driving methodology — but instead of driving a car, you're driving a computer screen. A self-driving computer.
-
-The analogy is precise. Tesla's autonomy stack perceives the road, reasons about obstacles, and acts through steering and acceleration. A terminal agent perceives the screen, reasons about the task, and acts through commands and keystrokes.
-
-Same architecture. Different vehicle.
-
-The first step to full autonomy isn't building new infrastructure. It's AI using computers as well as humans do. Click, type, navigate, execute. Once that works, everything else follows.
+His workflow — 3–8 Codex CLI instances in parallel, running in a 3x3 terminal grid. Pure terminal. No abstractions.
 
 ## The Autonomy Progression
 
 There's a clear progression happening:
 
-**Stage 1: Chat.** The model generates text. You copy-paste it.
+**Stage 1 — Chat.** The model generates text. You copy-paste it.
 
-**Stage 2: Tool use.** The model calls predefined functions. MCP, function calling, tool schemas. Curated, bounded, safe.
+**Stage 2 — Tool use.** The model calls predefined functions. MCP, function calling, tool schemas. Curated, bounded, safe.
 
-**Stage 3: Terminal.** The model operates the computer directly. Shell commands, file systems, scripts. No curated tool APIs — it uses what's already there.
+**Stage 3 — Terminal.** The model operates the computer directly. Shell commands, file systems, scripts. No curated tool APIs — it uses what's already there.
 
-**Stage 4: Full autonomy.** The model reasons, plans, and executes end-to-end. Multi-step tasks across applications, sessions, and time.
+**Stage 4 — Full autonomy.** The model reasons, plans, and executes end-to-end. Multi-step tasks across applications, sessions, and time.
+
+![Autonomy Stages](images/autonomy-stages.png)
 
 We're between Stage 2 and Stage 3 right now. Most production agents are in Stage 2. Claude Code, Codex CLI, and OpenClaw are pushing into Stage 3.
 
@@ -111,11 +131,21 @@ The terminal gives you governance primitives for free. The sandbox is the guardr
 
 ## In Closing
 
-The industry is converging. NVIDIA is training models specifically for terminal capability. Anthropic is acquiring computer-use companies. OpenAI hired the person who built the most popular terminal agent. Steinberger calls CLI the ultimate integration. The data backs him up.
+The industry is converging.
 
-The path to AI autonomy doesn't run through new protocols. It runs through the terminal — the integration layer that's been there all along.
+NVIDIA is training models specifically for terminal capability.
 
----
+Anthropic is acquiring computer-use companies.
+
+OpenAI hired the person who built the most popular terminal agent.
+
+Steinberger calls CLI the ultimate integration. The data backs him up.
+
+The path to AI autonomy doesn't run through new protocols.
+
+It runs through the terminal — the integration layer that's been there all along.
+
+![Divider](images/divider.png)
 
 ## References
 
@@ -130,4 +160,4 @@ The path to AI autonomy doesn't run through new protocols. It runs through the t
 
 ---
 
-*Chief Evangelist @ Kore.ai | I'm passionate about exploring the intersection of AI and language. Language Models, AI Agents, Agentic Apps, Dev Frameworks & Data-Driven Tools shaping tomorrow.*
+*Cobus Greyling — Chief Evangelist @ Kore.ai | I'm passionate about exploring the intersection of AI and language. Language Models, AI Agents, Agentic Apps, Dev Frameworks & Data-Driven Tools shaping tomorrow.*
